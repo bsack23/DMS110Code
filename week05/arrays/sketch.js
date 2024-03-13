@@ -42,8 +42,8 @@ let objectWithArray = {
   myJobs: ['eating', 'sleeping', 'biting people'],
 };
 
-let ind = 0;
-
+let x = 0;
+let index = 0;
 function setup() {
   createCanvas(400, 400);
   // dot notation to get value from object
@@ -69,8 +69,20 @@ function setup() {
 }
 
 function draw() {
-  ind = (ind + 10) % width;
-  background(arrayOfObjects[0].r, arrayOfObjects[0].g, arrayOfObjects[0].b);
-  fill(arrayOfObjects[1].r, arrayOfObjects[1].g, arrayOfObjects[1].b);
-  ellipse(ind, 200, 60);
+  x = (x + 10) % width;
+  if (x == 0) {
+    index += 1;
+    index %= 2;
+  }
+  background(
+    arrayOfObjects[index].r,
+    arrayOfObjects[index].g,
+    arrayOfObjects[index].b
+  );
+  fill(
+    arrayOfObjects[abs(index - 1)].r,
+    arrayOfObjects[abs(index - 1)].g,
+    arrayOfObjects[abs(index - 1)].b
+  );
+  ellipse(x, 200, 60);
 }
