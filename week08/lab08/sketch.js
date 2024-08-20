@@ -1,3 +1,7 @@
+/*
+DMS210
+Lab 8 - drum sound board
+*/
 // an array to hold drums
 let drums = [];
 // 1. declare variables for drum sounds

@@ -1,5 +1,5 @@
 /*
-DMS110 - for() loops
+DMS210 - for() loops
 
 syntax:
 for (initialization; condition; update) {

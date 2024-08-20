@@ -1,30 +1,32 @@
 /*
-DMS110 - variables, javascript objects, and the map function
+DMS210 - variables, javascript objects, and the map function
 
 */
 // variables in javascript, declared with let keyword and
 // (optionally) initialized with assignment operator =
 let xloc = 0;
 let yloc;
-// these are global variables because they are
-// declared outside of any function or object
-// globals can be used anywhere in the sketch
-
-// variable names can't start with a number or contain a space
-// also no other non-alphanumeric characters !@#$%^&*<>,.?/-+=
-// _ maybe, but avoid - use camelCase instead
-
 /*
+these are global variables because they are
+declared outside of any function or object
+globals can be used anywhere in the sketch
+
+variable names can't start with a number or contain a space
+also no other non-alphanumeric characters !@#$%^&*<>,.?/-+=
+_ maybe, but avoid - use camelCase instead
+
+
   math shortcuts
   x += y instead of x = x + y
   x -= y etc.
   x *= y
   x /= y
   x %= y what the heck is this??
-  */
+ 
 
-// javascript objects - an encapsulated data type
-// name: value pairs separated by commas inside curly braces
+javascript objects - an encapsulated data type
+name: value pairs separated by commas inside curly braces
+ */
 let col = {
   // this one could represent a color value
   r: 255,

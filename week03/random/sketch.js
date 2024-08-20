@@ -1,5 +1,5 @@
 /*
-DMS100 - the random() function
+DMS210 - the random() function
 zero args - returns a floating-point number between 0 and < 1
 one arg (n) - returns a floating-point number between 0 and < n
 two args (n, m) - returns a floating-point number between n and < m

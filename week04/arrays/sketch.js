@@ -1,8 +1,9 @@
 /*
-DMS110 - Arrays
+DMS210 - Arrays
 introducing array - a new data structure
 an enumerated list of elements, separated by commas.
-An array can hold many values under a single name, and you can access the values by referring to an index number.
+An array can hold many values under a single name, and you can 
+access the values by referring to an index number.
 
 syntax:
 arrayName = [element1, element2, element3 ...]
@@ -18,7 +19,7 @@ sets the value of the second element in the array to the string "badger";
 */
 // objects use name: value pairs
 let myObject = {
-  name: 'value',
+  name1: 'value1',
   name2: 'value2',
 };
 // arrays use index numbers

@@ -1,8 +1,8 @@
 /*
-DMS110 - conditionals and Boolean logic
+DMS210 - conditionals and Boolean logic
 */
 // declare and initialize some global variables
-let xloc = 100;
+let xLoc = 100;
 let xSpeed = 3;
 let dia = 50;
 
@@ -19,7 +19,8 @@ if(boolean_expression) {
   important note! == is not the same as =
   == is for comparison, = is assignment!
 
-  Boolean logic - && is AND, || is OR
+  Boolean logic operators - && is AND, || is OR
+  can be used to combine Boolean expressions
 */
   let n = 6;
   let m = 23;
@@ -34,7 +35,7 @@ if(boolean_expression) {
   let c = a && b;
   let d = a || b;
   print(a, b, c, d);
-  //
+  // should print "true, false, false, true"
 }
 
 function draw() {
@@ -44,15 +45,17 @@ function draw() {
     // if mouse is on left of canvas
     fill(255, 0, 255); // turn fill purple
   } else if (mouseY > height / 2) {
-    //
+    // if mouse is above center of canvas
     fill(255, 0, 0);
+    // turn fill red
   } else {
     fill(0, 255, 0);
+    // turn fill green
   }
-  ellipse(xloc, height / 2, dia);
-  xloc = xloc + xSpeed;
+  ellipse(xLoc, height / 2, dia);
+  xLoc = xLoc + xSpeed;
   // *, / % performed before +, -
-  if (xloc > width - dia / 2 || xloc < 0 + dia / 2) {
+  if (xLoc > width - dia / 2 || xLoc < 0 + dia / 2) {
     //xSpeed = -xSpeed;
     //or
     xSpeed *= -1;

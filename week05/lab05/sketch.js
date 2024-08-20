@@ -1,4 +1,5 @@
 /*
+DMS210
 This is an example for Lab 5 - a simple animation
 using functions for code modularity and easy reusability
 */
