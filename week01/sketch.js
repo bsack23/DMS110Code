@@ -19,7 +19,7 @@ function setup() {
 function draw() {
   background(20, 50, 50);
   /*
-  background(), fill(), stroke() functions all take arguements that determine
+  background(), fill(), stroke() functions all take arguments that determine
   the color of everything that follows, until changed by another function
   color arguments:
   one value = greyscale
