@@ -70,17 +70,25 @@ function setup() {
 }
 
 function draw() {
+  // increment the value of x by 10 and use
+  // modulo so that it 'wraps around' width value
   x = (x + 10) % width;
+  // whenever x is zero ...
   if (x == 0) {
+    // increment index by one...
     index += 1;
+    // and use modulo to 'wrap around' 2
     index %= 2;
+    // this will toggle index from 0 to 1 to 0 to 1 etc
   }
   background(
+    // get values from object stored at index
     arrayOfObjects[index].r,
     arrayOfObjects[index].g,
     arrayOfObjects[index].b
   );
   fill(
+    // get values from object stored at the absolute value of index - 1
     arrayOfObjects[abs(index - 1)].r,
     arrayOfObjects[abs(index - 1)].g,
     arrayOfObjects[abs(index - 1)].b

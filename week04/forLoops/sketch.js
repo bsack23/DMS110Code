@@ -39,6 +39,7 @@ function setup() {
 }
 
 function draw() {
+  // get color values from object stored at index 0 of the colors array
   background(colors[0].r, colors[0].g, colors[0].b);
   // two nested for loops to draw a grid pattern
   for (let x = 0; x <= width; x += 50) {
